@@ -106,5 +106,23 @@ namespace AwesomePokerGameSln.Code {
 
       return handType;
     }
+
+        public int getHandValue(String handType)
+        {
+            int handValue = 0;
+            switch(handType) {
+                case "ROYAL_FLUSH": handValue = 10; break;
+                case "STR_FLUSH": handValue = 9; break;
+                case "FOUR": handValue = 8; break;
+                case "FULL_HOUSE": handValue = 7; break;
+                case "FLUSH": handValue = 6; break;
+                case "STRAIGHT": handValue = 5; break;
+                case "THREE": handValue = 4; break;
+                case "TWO_PAIRS": handValue = 3; break;
+                case "ONE_PAIR": handValue = 2; break;
+                case "HIGH": handValue = 1; break;
+            }
+            return handValue;
+        }
   }
 }
