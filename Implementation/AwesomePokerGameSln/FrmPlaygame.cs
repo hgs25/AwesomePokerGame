@@ -50,7 +50,23 @@ namespace AwesomePokerGameSln {
         dealerCardPic.BackgroundImage = CardImageHelper.cardToBitmap(card);
       }
       playerHand = new Hand(cards);
-      lblHandType.Text = playerHand.getHandType().ToString();
+      String playerHandType = playerHand.getHandType().ToString();
+      String dealerHandType = dealerHand.getHandType().ToString();
+
+      lblHandType.Text = playerHandType;
+      oppHandType.Text = dealerHandType;
+
+      int playerHandValue = playerHand.getHandValue(playerHandType);
+      int dealerHandValue = dealerHand.getHandValue(dealerHandType);
+
+      if (playerHandValue > dealerHandValue) {
+        playOutcome.Text = "You Win";
+      } else if (playerHandValue < dealerHandValue)
+      {
+        playOutcome.Text = "You Lose";
+      } else {
+        playOutcome.Text = "You Tied";
+      }
     }
 
     private void FrmPlaygame_FormClosed(object sender, FormClosedEventArgs e) {
@@ -66,5 +82,15 @@ namespace AwesomePokerGameSln {
     private void button1_Click(object sender, EventArgs e) {
       dealCards();
     }
-  }
+
+        private void playOutcome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHandType_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
