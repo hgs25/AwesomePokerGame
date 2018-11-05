@@ -23,10 +23,33 @@ namespace AwesomePokerGameSln {
       }
     }
 
+
     private void btnNewGame_Click(object sender, EventArgs e) {
       FrmPlaygame frmPlaygame = new FrmPlaygame();
       frmPlaygame.Show();
       Hide();
     }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            if (btnColor.Text.EndsWith("On", true, null))
+            {
+                FrmTitle2.Visible = true;
+                label1.Visible = false;
+                label2.Visible = false;
+                label3.Visible = true;
+                btnColor.Text = "Colorblind Off";
+            }
+            else
+            {
+                FrmTitle2.Visible = false;
+                label1.Visible = true;
+                label2.Visible = true;
+                label3.Visible = false;
+                btnColor.Text = "Colorblind On";
+
+
+            }
+        }
   }
 }
