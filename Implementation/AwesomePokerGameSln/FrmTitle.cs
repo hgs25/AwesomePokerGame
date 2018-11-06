@@ -37,6 +37,9 @@ namespace AwesomePokerGameSln {
                 FrmTitle2.Visible = true;
                 label1.Visible = false;
                 label2.Visible = false;
+                btnQuit.BackColor = System.Drawing.Color.WhiteSmoke;
+                btnViewRuleBook.BackColor = System.Drawing.Color.WhiteSmoke;
+                btnNewGame.BackColor = System.Drawing.Color.WhiteSmoke;
                 btnColor.Text = "Colorblind Off";
             }
             else
@@ -44,6 +47,9 @@ namespace AwesomePokerGameSln {
                 FrmTitle2.Visible = false;
                 label1.Visible = true;
                 label2.Visible = true;
+                btnQuit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192))))); ;
+                btnViewRuleBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+                btnNewGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
                 btnColor.Text = "Colorblind On";
 
 
