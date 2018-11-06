@@ -23,7 +23,6 @@
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTitle));
             this.FrmTitle2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNewGame = new System.Windows.Forms.Button();
@@ -32,7 +31,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.picRulebook = new System.Windows.Forms.PictureBox();
             this.btnColor = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FrmTitle2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).BeginInit();
             this.SuspendLayout();
@@ -41,9 +39,9 @@
             // 
             this.FrmTitle2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.FrmTitle2.BackColor = System.Drawing.Color.Black;
-            this.FrmTitle2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("FrmTitle2.ErrorImage")));
-            this.FrmTitle2.Image = ((System.Drawing.Image)(resources.GetObject("FrmTitle2.Image")));
-            this.FrmTitle2.InitialImage = ((System.Drawing.Image)(resources.GetObject("FrmTitle2.InitialImage")));
+            this.FrmTitle2.ErrorImage = global::AwesomePokerGameSln.Properties.Resources.title_screen21;
+            this.FrmTitle2.Image = global::AwesomePokerGameSln.Properties.Resources.title_screen21;
+            this.FrmTitle2.InitialImage = global::AwesomePokerGameSln.Properties.Resources.title_screen21;
             this.FrmTitle2.Location = new System.Drawing.Point(0, 0);
             this.FrmTitle2.Name = "FrmTitle2";
             this.FrmTitle2.Size = new System.Drawing.Size(1274, 693);
@@ -134,27 +132,13 @@
             // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(12, 12);
+            this.btnColor.Location = new System.Drawing.Point(1142, 12);
             this.btnColor.Name = "btnColor";
             this.btnColor.Size = new System.Drawing.Size(113, 30);
             this.btnColor.TabIndex = 6;
             this.btnColor.Text = "Colorblind On";
             this.btnColor.UseVisualStyleBackColor = true;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
-            // 
-            // label3
-            // 
-            this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(723, 405);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "AWESOME \r\nPOKER \r\nGAME";
-            this.label3.Visible = false;
             // 
             // FrmTitle
             // 
@@ -165,7 +149,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1267, 689);
             this.Controls.Add(this.picRulebook);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnQuit);
@@ -193,7 +176,6 @@
     private System.Windows.Forms.PictureBox picRulebook;
     private System.Windows.Forms.Button btnColor;
         private System.Windows.Forms.PictureBox FrmTitle2;
-        private System.Windows.Forms.Label label3;
     }
 }
 

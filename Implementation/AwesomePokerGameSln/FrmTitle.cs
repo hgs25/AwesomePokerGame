@@ -37,7 +37,6 @@ namespace AwesomePokerGameSln {
                 FrmTitle2.Visible = true;
                 label1.Visible = false;
                 label2.Visible = false;
-                label3.Visible = true;
                 btnColor.Text = "Colorblind Off";
             }
             else
@@ -45,7 +44,6 @@ namespace AwesomePokerGameSln {
                 FrmTitle2.Visible = false;
                 label1.Visible = true;
                 label2.Visible = true;
-                label3.Visible = false;
                 btnColor.Text = "Colorblind On";
 
 
