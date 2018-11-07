@@ -1,4 +1,6 @@
 ﻿using AwesomePokerGameSln.Properties;
+using AwesomePokerGameSln.Code;
+using System.Net.Sockets;
 using System;
 using System.Windows.Forms;
 
@@ -27,6 +29,20 @@ namespace AwesomePokerGameSln {
       FrmPlaygame frmPlaygame = new FrmPlaygame();
       frmPlaygame.Show();
       Hide();
+    }
+
+    private void btnNetwork_Click(object sender, EventArgs e)
+    {
+        PGNetwork cursock = new PGNetwork();
+        if (btnNetwork.Text == "Offline") {
+            btnNetwork.Text = "Online";
+            PGNetwork.Connect(cursock);
+        }
+        else
+        {
+            PGNetwork.Disconnect(cursock);
+            btnNetwork.Text = "Offline";
+        }
     }
   }
 }
