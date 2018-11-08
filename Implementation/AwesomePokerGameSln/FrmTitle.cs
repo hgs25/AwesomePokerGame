@@ -32,14 +32,14 @@ namespace AwesomePokerGameSln {
 
     private void btnNetwork_Click(object sender, EventArgs e)
     {
-        PGNetwork cursock = new PGNetwork();
+        Code.PGNetwork cursock = new Code.PGNetwork();
         if (btnNetwork.Text == "Offline") {
             btnNetwork.Text = "Online";
-            PGNetwork.Connect(cursock);
+            Code.PGNetwork.Connect(cursock);
         }
         else
         {
-            PGNetwork.Disconnect(cursock);
+            Code.PGNetwork.Disconnect(cursock);
             btnNetwork.Text = "Offline";
         }
     }
