@@ -31,6 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.picRulebook = new System.Windows.Forms.PictureBox();
             this.btnColor = new System.Windows.Forms.Button();
+            this.btnNetwork = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.FrmTitle2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).BeginInit();
             this.SuspendLayout();
@@ -129,6 +130,19 @@
             this.picRulebook.TabIndex = 5;
             this.picRulebook.TabStop = false;
             this.picRulebook.Visible = false;
+            //
+            // btnNetwork
+            //
+            this.btnNetwork.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNetwork.Location = new System.Drawing.Point(842, 26);
+            this.btnNetwork.Name = "btnNetwork";
+            this.btnNetwork.Size = new System.Drawing.Size(71, 42);
+            this.btnNetwork.TabIndex = 6;
+            this.btnNetwork.Text = "Offline";
+            this.btnNetwork.UseVisualStyleBackColor = true;
+            this.btnNetwork.Click += new System.EventHandler(this.btnNetwork_Click);
+            this.ClientSize = new System.Drawing.Size(950, 560);
+            this.Controls.Add(this.btnNetwork);
             // 
             // btnColor
             // 
@@ -174,8 +188,9 @@
     private System.Windows.Forms.Button btnQuit;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.PictureBox picRulebook;
+    private System.Windows.Forms.Button btnNetwork;
     private System.Windows.Forms.Button btnColor;
-        private System.Windows.Forms.PictureBox FrmTitle2;
+    private System.Windows.Forms.PictureBox FrmTitle2;
     }
 }
 

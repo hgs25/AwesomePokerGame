@@ -30,6 +30,20 @@ namespace AwesomePokerGameSln {
       Hide();
     }
 
+    private void btnNetwork_Click(object sender, EventArgs e)
+    {
+        Code.PGNetwork cursock = new Code.PGNetwork();
+        if (btnNetwork.Text == "Offline") {
+            btnNetwork.Text = "Online";
+            Code.PGNetwork.Connect(cursock);
+        }
+        else
+        {
+            Code.PGNetwork.Disconnect(cursock);
+            btnNetwork.Text = "Offline";
+        }
+    }
+
         private void btnColor_Click(object sender, EventArgs e)
         {
             if (btnColor.Text.EndsWith("On", true, null))
@@ -55,5 +69,5 @@ namespace AwesomePokerGameSln {
 
             }
         }
-  }
+    } 
 }
